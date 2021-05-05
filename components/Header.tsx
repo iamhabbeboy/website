@@ -3,8 +3,10 @@ import Link from "next/link";
 
 type Props = {
   background?: string;
-  children: Element;
+  children: React.ReactNode;
 };
+
+
 
 const Header: React.FC<Props> = ({ background, children }) => {
   const textColor: string =

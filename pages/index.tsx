@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Meta from "../components/Meta";
 import Typical from "react-typical";
 import pageConfig from "../utility/pageConfig";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const { header } = pageConfig;
