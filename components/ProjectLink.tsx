@@ -1,12 +1,15 @@
 type Props = {
-  title: string;
-  active?: string;
+  title: string | null;
+  active?: string | null;
   pager?: any;
+};
+const defaultProps: Props = {
+  active: '',
+  title: '',
 };
 
 const ProjectLink: React.FC<Props> = ({ title, active, pager }) => {
   const bgColor = active ? 'red' : "blue";
-  console.log(active);
   return (
     <span
       className={`p-2 text-${bgColor}-400 mr-1 rounded-sm hover:bg-indigo-800 transition duration-500 ease-in-out`}
@@ -17,9 +20,5 @@ const ProjectLink: React.FC<Props> = ({ title, active, pager }) => {
   );
 };
 
+ProjectLink.defaultProps = defaultProps;
 export default ProjectLink;
-
-ProjectLink.defaultProps = {
-  color: "",
-  title: "",
-};
