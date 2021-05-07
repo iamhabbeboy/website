@@ -1,6 +1,6 @@
 export default {
   header: {
-    text: ["Hello", "I'm Abiodun Solomon", "I code in "],
+    text: ["Hello", "I'm Abiodun Solomon", "I'm experienced in "],
     typical: [
       "PHP",
       2000,
@@ -19,6 +19,7 @@ export default {
   },
   nav: {
     logo: "ASB",
+    domain: "https://abiodunazeez.com",
     links: [
       {
         text: "Projects",
@@ -40,6 +41,7 @@ export default {
   },
   contact: {
     email: 'hello@abiodunazeez.com',
+    phone: '07087322191',
     twitter: 'abbey__web',
     linkedIn: 'azeez-abiodun',
     devTo: 'iamhabbeboy',

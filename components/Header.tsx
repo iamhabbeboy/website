@@ -38,7 +38,7 @@ const Header: React.FC<Props> = ({ background, status, children }) => {
             })}
           </div>
         </div>
-        <div className="text-white mt-10">{children}</div>
+        <div className="text-white mt-10 w-full">{children}</div>
       </div>
     </div>
   );
