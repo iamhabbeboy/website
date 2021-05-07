@@ -8,12 +8,13 @@ import ProjectLink from "../components/ProjectLink";
 
 const Project = () => {
   const [pager, setPager] = useState(null);
+  let [status, setStatus] = useState(null);
   return (
     <div className={""}>
       <Meta title="Abiodun Solomon::portfolio" />
       <main>
-        <Navigation />
-        <Header background="bg-theme">
+        <Navigation action={setStatus} status={status} />
+        <Header background="bg-theme" status={status}>
           <h2 className="text-5xl font-bold text-white">Projects</h2>
           <div>
             <ProjectLink

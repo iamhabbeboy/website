@@ -4,16 +4,19 @@ import Meta from "../components/Meta";
 import Typical from "react-typical";
 import pageConfig from "../utility/pageConfig";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 const Home = () => {
   const { header } = pageConfig;
+  let [status, setStatus] = useState(null);
+
   return (
     <div className={""}>
-      <Meta title="Abiodun Solomon::portfolio" />
+      <Meta title="Abiodun Solomon" />
       <main>
-        <Navigation />
-        <Header background="bg-theme">
-          <div className="mt-20">
+        <Navigation action={setStatus} status={status} />
+        <Header background="bg-theme" status={status}>
+          <div className="mt-5 sm:mt-20">
             <br/><br/><br/>
             <h2 className="text-5xl font-bold">
               {header.text[0]}

@@ -2,17 +2,19 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import Meta from "../components/Meta";
+import { useState } from "react";
 
 const Resume = () => {
   const style = {
     left: "50%",
   };
+  let [status, setStatus] = useState(null);
   return (
     <div className={""}>
       <Meta title="Abiodun Solomon::Contact" />
       <main>
-        <Navigation />
-        <Header background="bg-theme">
+        <Navigation action={setStatus} status={status} />
+        <Header background="bg-theme" status={status}>
           <h2 className="text-5xl font-bold text-white">Resume</h2>
           <div>
             <div className="relative wrap overflow-hidden p-10 h-full">
