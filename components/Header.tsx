@@ -19,7 +19,7 @@ const Header: React.FC<Props> = ({ background, status, children }) => {
       className={`min-h-screen flex  justify-center ${background}`}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse justify-between">
-        <div className={`mt-20 md:w-full ${textColor} ${getStatus}`}>
+        <div className={`mt-20 w-1/3 ${textColor} ${getStatus}`}>
           <div className="border-r-2 border-red-500">
             {pageConfig.nav.links.map((link, index) => {
               return (

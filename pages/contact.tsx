@@ -3,10 +3,6 @@ import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import Meta from "../components/Meta";
 import pageConfig from "../utility/pageConfig";
-import Twitter from "../components/Twitter";
-import LinkedIn from "../components/LinkedIn";
-import Github from "../components/Github";
-import DevTo from "../components/DevTo";
 import { useState } from "react";
 
 const Contact = () => {
@@ -15,7 +11,7 @@ const Contact = () => {
   let [status, setStatus] = useState(null);
   return (
     <div className="">
-      <Meta title="Abiodun Solomon::Contact" />
+      <Meta title="Abiodun Solomon - Reach out to me" />
       <main>
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>
