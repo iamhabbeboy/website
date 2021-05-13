@@ -11,7 +11,10 @@ const Project = () => {
   const { domain } = pageConfig.nav;
   return (
     <div className={""}>
-      <Meta title="Abiodun Solomon - Portfolio" />
+      <Meta>
+        <title>Abiodun Azeez - Portfolio</title>
+        <meta name="Description" content={""}></meta>
+      </Meta>
       <main>
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>

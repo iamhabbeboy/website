@@ -14,7 +14,10 @@ const Resume = () => {
   const { link, employments } = pageConfig.resume;
   return (
     <div className={""}>
-      <Meta title="Abiodun Solomon - Resume" />
+      <Meta>
+        <title>Abiodun Azeez - Resume</title>
+        <meta name="Description" content={""}></meta>
+      </Meta>
       <main>
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>

@@ -1,6 +1,7 @@
 export default {
+  gtmId: "G-PPTHY6JLE8",
   header: {
-    text: ["Hello", "I'm Abiodun Solomon", "I'm experienced in "],
+    text: ["Hello", "I'm Abiodun Azeez", "I'm experienced in "],
     typical: [
       "PHP",
       2000,
@@ -20,7 +21,7 @@ export default {
     btnText: "Discover more",
   },
   nav: {
-    logo: "ASB",
+    logo: "AB",
     domain: "abiodunazeez",
     links: [
       {
@@ -50,8 +51,7 @@ export default {
     github: "iamhabbeboy",
   },
   resume: {
-    link:
-      "https://drive.google.com/file/d/1boudC25-Iq1DWqs3rqVS9iYumoqalfk_/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1boudC25-Iq1DWqs3rqVS9iYumoqalfk_/view?usp=sharing",
     employments: [
       {
         title: "Logrocket | Technical Writer",

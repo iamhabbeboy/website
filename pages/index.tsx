@@ -12,7 +12,12 @@ const Home = () => {
 
   return (
     <div className={""}>
-      <Meta title="Abiodun Solomon" />
+      <Meta>
+        <title>Abiodun Azeez - A Software developer</title>
+        <meta name="description" content="Hello, I'm Abiodun Azeez. A Software Developer that loves solving problems and building cool stuffs." />
+        <meta name="robots" content="index, follow" />
+        <meta name="referrer" content="always" /> 
+      </Meta>
       <main>
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>

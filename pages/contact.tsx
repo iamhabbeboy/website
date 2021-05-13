@@ -11,7 +11,10 @@ const Contact = () => {
   let [status, setStatus] = useState(null);
   return (
     <div className="">
-      <Meta title="Abiodun Solomon - Reach out to me" />
+      <Meta>
+        <title>Abiodun Azeez - Contact</title>
+        <meta name="Description" content={""}></meta>
+      </Meta>
       <main>
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>
