@@ -13,17 +13,17 @@ type Props = {
 const Header: React.FC<Props> = ({ background, status, children }) => {
   const textColor: string =
     background !== "bg-theme" ? "text-theme" : "text-white";
-  const getStatus = status === 1 ? '' : 'hidden sm:block';
+  const getStatus = status === 1 ? '' : 'hidden md:block';
   return (
     <div
       className={`min-h-screen flex  justify-center ${background}`}
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse justify-between">
-        <div className={`mt-20 w-1/3 ${textColor} ${getStatus}`}>
-          <div className="border-r-2 border-red-500">
+        <div className={`mt-20 md:w-1/3 ${textColor} ${getStatus}`}>
+          <div className="md:border-r-2 md:border-red-500">
             {pageConfig.nav.links.map((link, index) => {
               return (
-                <div className="sm:text-right text-center py-3" key={index}>
+                <div className="md:text-right text-center py-3" key={index}>
                   <Link href={link.url}>
                     <a
                       className={

@@ -27,19 +27,18 @@ const Contact = () => {
               </li>
             </ul>
 
-            <div className="flex w-full mt-5">
-              <div className="pt-3 pb-3 w-3/12 text-center">
-                Github
-                <br/><a href={`https://github.com/${github}&utm_medium=${domain}`} className="pt-5 text-red-400" target="_blank"> {github}</a>
+            <div className="grid grid-cols-4 md:w-2/3 w-full mt-5">
+              <div className="pt-3 pb-3">
+                <a href={`https://github.com/${github}&utm_medium=${domain}`} className="pt-5 text-red-400" target="_blank"> Github</a>
               </div>
-              <div className="pt-3 pb-3 w-3/12 text-center">
-                Twitter <br/> <a href={`https://twitter.com/${twitter}&utm_medium=${domain}`} className="pl-5 pt-5 text-red-400" target="_blank">{twitter}</a>
+              <div className="pt-3 pb-3">
+                <a href={`https://twitter.com/${twitter}&utm_medium=${domain}`} className=" pt-5 text-red-400" target="_blank">Twitter</a>
               </div>
-              <div className="pt-3 pb-3 w-3/12 text-center">
-                Blog <br/> <a href={`https://dev.to/${devTo}&utm_medium=${domain}`} className="pl-5 pt-5 text-red-400" target="_blank">{devTo}</a>
+              <div className="pt-3 pb-3">
+                <a href={`https://dev.to/${devTo}&utm_medium=${domain}`} className="pt-5 text-red-400" target="_blank">Blog</a>
               </div>
-              <div className="pt-3 pb-3 w-3/12 text-center">
-                LinkedIn <br/> <a href={`https://linkedin.com/in/${linkedIn}&utm_medium=${domain}`} className="pl-5 pt-5 text-red-400" target="_blank">{linkedIn}</a>
+              <div className="pt-3 pb-3">
+                <a href={`https://linkedin.com/in/${linkedIn}&utm_medium=${domain}`} className="pt-5 text-red-400" target="_blank">LinkedIn</a>
               </div>
           </div>
         </Header>

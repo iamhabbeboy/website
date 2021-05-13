@@ -19,7 +19,7 @@ const Resume = () => {
         <Navigation action={setStatus} status={status} />
         <Header background="bg-theme" status={status}>
           <h2 className="text-5xl font-bold text-white">Resume</h2>
-          <div className="text-center sm:my-0 my-10">
+          <div className="text-center md:my-0 my-10">
             <a
               href={link}
               target="_blank"
@@ -29,9 +29,9 @@ const Resume = () => {
             </a>
           </div>
           <div>
-            <div className="relative wrap overflow-hidden p-10 h-full w-full">
+            <div className="relative wrap overflow-hidden p-0 md:p-10 lg:p-10 h-full w-full">
               <div
-                className="sm:border-2-2 sm:absolute sm:border-opacity-20 sm:border-gray-200 h-full sm:border"
+                className="md:border-2-2 md:absolute md:border-opacity-20 md:border-gray-200 h-full md:border"
                 style={style}
               ></div>
               {employments.map((employment, index) => {

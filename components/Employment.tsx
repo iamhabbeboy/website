@@ -12,14 +12,14 @@ const Employment: React.FC<Props> = ({ title, position, activities, date, locati
   const timelinePosition = position === "left" ? "flex-row-reverse" : "";
   return (
     <div
-      className={`sm:mb-8 sm:flex sm:justify-between sm:items-center w-full ${timelinePosition}`}
+      className={`md:mb-8 md:flex md:justify-between md:items-center w-full ${timelinePosition}`}
     >
       <div className="order-1 w-5/12"></div>
-      <div className="z-20 flex items-center mx-auto my-10 sm:my-0 order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+      <div className="z-20 flex items-center mx-auto my-10 md:my-0 order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
         <h1 className="mx-auto font-semibold text-lg text-white">{index+1}</h1>
       </div>
       <div
-        className={`order-1 ${bgTheme} rounded-lg shadow-xl sm:w-5/12 px-6 py-4`}
+        className={`order-1 ${bgTheme} rounded-lg shadow-xl md:w-5/12 px-6 py-4`}
       >
         <h3 className="mb-0 font-bold text-gray-800 text-md">{title}</h3>
         <h4 className="text-red-800 text-sm float-left">{location}</h4>
