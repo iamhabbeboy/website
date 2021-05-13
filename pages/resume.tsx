@@ -29,7 +29,7 @@ const Resume = () => {
             </a>
           </div>
           <div>
-            <div className="relative wrap overflow-hidden p-0 md:p-10 lg:p-10 h-full w-full">
+            <div className="relative wrap overflow-hidden p-0 md:p-10 h-full w-full">
               <div
                 className="md:border-2-2 md:absolute md:border-opacity-20 md:border-gray-200 h-full md:border"
                 style={style}
